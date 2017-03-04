@@ -12,10 +12,9 @@ namespace BlockingBootstrapProvider
     {
         public Task Init(string name, IProviderRuntime providerRuntime, IProviderConfiguration config)
         {
-            return TaskDone.Done;
-//            while (true)
-//            {
-//            }
+            while (true)
+            {
+            }
         }
 
         public Task Close()

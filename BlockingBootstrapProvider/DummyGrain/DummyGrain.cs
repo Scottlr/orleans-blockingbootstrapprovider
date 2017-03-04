@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Orleans;
+using System;
 
 namespace Grains
 {
@@ -7,6 +8,8 @@ namespace Grains
     {
         public async Task DummyMethod()
         {
+            Console.WriteLine("Grain invoked!");
+
             await Task.Delay(100);
         }
     }
